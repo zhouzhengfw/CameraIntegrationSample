@@ -1,0 +1,55 @@
+buildscript {
+    ext {
+        material_version = '1.4.0'
+        exoPlayerVersion = '2.11.7'
+        kotlin_version = '1.5.30'
+        ktx_version = '1.7.0'
+        coroutineVersion = '1.6.4'
+        activity_ktx_version = '1.2.2'
+        fragment_ktx_version = '1.3.3'
+        glide_version = '4.12.0'
+        glide_compiler_version = '4.12.0'
+        glide_transformations_version = '4.3.0'
+        swipeLayoutVersion = "1.1.0"
+        dagger_version = '2.34'
+        glideVersion = '4.11.0'
+        recyclerViewVersion = '1.1.0'
+        appCompatVersion = '1.3.1'
+        lifecycle_version = '2.4.1'
+        constraintlayout = '2.1.1'
+        coroutinerVer = "1.6.4"
+        work_manager_version = "2.7.1"
+        environmentswitcher_version = "1.6.0"
+        arouter_version = "1.5.2"
+        startup_version = "1.1.1"
+        cameraKitLensesGroupId = '5759981697630208'
+        gsonVersion = '2.9.0'
+        javaPhoenixClientVersion = '1.0.0'
+        lottieVersion = '5.2.0'
+        firebaseBomVersion = '30.3.1'
+        progressbuttonVersion = '2.1.0'
+        ccolorcatAdapterVersion = 'v4.1.2'
+        ccolorcatWheelViewVersion = 'v1.1.0'
+        flexboxVersion = '3.0.0'
+
+        // retrofit & okhttp & cronet
+        retrofitVersion = '2.5.0'
+        retrofitConverterGsonVersion = '2.4.0'
+        retrofitConverterScalarsVersion = '2.1.0'
+        retrofitKotlinxSerializationConverterVersion = '0.8.0'
+        okhttpVersion = '4.9.3'
+        okttpLoggingInterceptorVersion = '4.9.3'
+        leakcanaryVersion = '2.8.1'
+        playServicesCronet = '16.0.0'
+        cameraKitDistributionVersion = '1.7.4'
+        cameraKitVersion = "$cameraKitDistributionVersion+9c1b4eb1.83"
+
+        ivsBroacastVersion = '1.7.0'
+        fwLibraryVersion = "1.3.1"
+        thirdPartyLibraryVersion = '1.3.0-dev-SNAPSHOT'
+        dokitVersion = '3.5.0'
+        immersionbar = '3.2.2'
+
+        camerax_version = "1.1.0"
+    }
+}
