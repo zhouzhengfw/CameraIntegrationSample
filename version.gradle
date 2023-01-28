@@ -45,7 +45,7 @@ buildscript {
         cameraKitVersion = "$cameraKitDistributionVersion+9c1b4eb1.83"
 
         ivsBroacastVersion = '1.7.0'
-        fwLibraryVersion = "1.3.1"
+        fwLibraryVersion = "1.4.3-test"
         thirdPartyLibraryVersion = '1.3.0-dev-SNAPSHOT'
         dokitVersion = '3.5.0'
         immersionbar = '3.2.2'

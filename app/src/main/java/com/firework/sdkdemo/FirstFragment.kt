@@ -48,8 +48,8 @@ class FirstFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             val intent = Intent(requireActivity(), LoginWebViewActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
-            requireActivity().startActivityForResult(intent, 0)
-            requireActivity().registerForActivityResult(ActivityResultContracts.StartActivityForResult(),
+//            requireActivity().startActivityForResult(intent, 0)
+            FirstFragment@this.registerForActivityResult(ActivityResultContracts.StartActivityForResult(),
                 ActivityResultCallback {
                     it?.apply {
 
