@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.loopnow.camera",
+    "module": "initializer",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "initializer-1.0.0.jar",
+          "url": "initializer-1.0.0.jar",
+          "size": 3545,
+          "sha512": "9e6fc6ee92d37155d6df1035396d06695d03bdd93c456522afdd5aab9d53e4afc3bd69f1e469c789de22fd70e655d02881578befe32a400ba8e923ae9c9ec01f",
+          "sha256": "8d6e93708b8a47d265a02b0585f3eee7164e2f8ceba4ac2f7c8a6b47bb7e312f",
+          "sha1": "b910f92e18fec67b4cc889770e423c2efb9a0fbe",
+          "md5": "6af9feda4f511aadb58fed99efa4fca5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-gradle-plugin",
+          "version": {
+            "requires": "1.7.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "initializer-1.0.0.jar",
+          "url": "initializer-1.0.0.jar",
+          "size": 3545,
+          "sha512": "9e6fc6ee92d37155d6df1035396d06695d03bdd93c456522afdd5aab9d53e4afc3bd69f1e469c789de22fd70e655d02881578befe32a400ba8e923ae9c9ec01f",
+          "sha256": "8d6e93708b8a47d265a02b0585f3eee7164e2f8ceba4ac2f7c8a6b47bb7e312f",
+          "sha1": "b910f92e18fec67b4cc889770e423c2efb9a0fbe",
+          "md5": "6af9feda4f511aadb58fed99efa4fca5"
+        }
+      ]
+    }
+  ]
+}

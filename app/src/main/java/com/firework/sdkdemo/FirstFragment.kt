@@ -27,7 +27,37 @@ private const val REQUEST_RESULT = 1001
 class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
+    private var lan = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        it?.apply {
 
+            if (this.resultCode == REQUEST_RESULT) {
+                if (resultCode == Activity.RESULT_OK) {
+                    if (data != null) {
+                        val credential = Api.credential
+                        if (credential != null && !credential.accessToken.isNullOrBlank()) {
+                            lifecycleScope.launch {
+                                try {
+                                    Api.syncCurrentOrganization()
+                                    ProviderUtil.trackVisitorEvents(FWEventName.SESSION_LOGGED_IN)
+//                                                launchHome()
+                                } catch (e: Exception) {
+                                    Helper.showToast(
+                                        requireActivity(),
+                                        requireActivity().getString(R.string.login_failed)
+                                    )
+                                }
+                            }
+                        }
+                    }
+                    Helper.showToast(
+                        requireActivity(),
+                        requireActivity().getString(R.string.login_failed)
+                    )
+                }
+            }
+
+        }
+    }
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -49,32 +79,7 @@ class FirstFragment : Fragment() {
             val intent = Intent(requireActivity(), LoginWebViewActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
 //            requireActivity().startActivityForResult(intent, 0)
-            FirstFragment@this.registerForActivityResult(ActivityResultContracts.StartActivityForResult(),
-                ActivityResultCallback {
-                    it?.apply {
-
-                        if (this.resultCode == REQUEST_RESULT) {
-                            if (resultCode == Activity.RESULT_OK) {
-                                if (data != null) {
-                                    val credential = Api.credential
-                                    if (credential != null && !credential.accessToken.isNullOrBlank()) {
-                                        lifecycleScope.launch {
-                                            try {
-                                                Api.syncCurrentOrganization()
-                                                ProviderUtil.trackVisitorEvents(FWEventName.SESSION_LOGGED_IN)
-//                                                launchHome()
-                                            } catch (e: Exception) {
-                                                Helper.showToast(requireActivity(), requireActivity().getString(R.string.login_failed))
-                                            }
-                                        }
-                                    }
-                                }
-                                Helper.showToast(requireActivity(), requireActivity().getString(R.string.login_failed))
-                            }
-                        }
-
-                    }
-                }).launch(intent)
+            lan.launch(intent)
         }
     }
 

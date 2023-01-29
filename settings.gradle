@@ -10,6 +10,9 @@ pluginManagement {
             url "https://plugins.gradle.org/m2/"
         }
         maven {
+            url('./maven')
+        }
+        maven {
             url = uri("https://maven.pkg.github.com/loopsocial/eadu")
             credentials {
                 username = System.getenv("USERNAME")
@@ -30,6 +33,9 @@ dependencyResolutionManagement {
             url "https://plugins.gradle.org/m2/"
         }
         maven {
+            url('./maven')
+        }
+        maven {
             url = uri("https://maven.pkg.github.com/loopsocial/eadu")
             credentials {
                 username = System.getenv("USERNAME")
@@ -40,3 +46,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "SdkDemo"
 include ':app'
+//include ':fw-initializer'

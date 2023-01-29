@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-
 }
 
 android {
@@ -21,13 +20,6 @@ android {
         manifestPlaceholders["envProviderFilter"] = "com.firework.sdkdemo"
     }
 
-
-//    kapt {
-//        arguments {
-//            arg("AROUTER_MODULE_NAME", project.getName())
-//        }
-//    }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -43,11 +35,6 @@ android {
     }
     buildFeatures {
         viewBinding true
-    }
-    kapt {
-        arguments {
-            arg("AROUTER_MODULE_NAME", project.getName())
-        }
     }
 }
 
@@ -65,18 +52,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-
-    implementation "com.loopnow.library:camera-framework:$fwLibraryVersion"
-//    implementation "com.loopnow.library:camera:$fwLibraryVersion"
-    implementation("com.loopnow.library:auth:$fwLibraryVersion")
-    implementation "com.loopnow.library.base:base-ui:$fwLibraryVersion"
-//    implementation "com.loopnow.library:data-report:$fwLibraryVersion"
-//    implementation "com.loopnow.library.base:dev-tool:$fwLibraryVersion"
-    implementation "com.loopnow.library.base:network:$fwLibraryVersion"
-    implementation "com.loopnow.library.base:util:$fwLibraryVersion"
-    implementation "com.loopnow.library:camera-framework:$fwLibraryVersion"
-    implementation "com.loopnow.library:content-management:$fwLibraryVersion"
-    implementation "com.loopnow.library:live-stream-kit:$fwLibraryVersion"
-
-    kapt "com.alibaba:arouter-compiler:$arouter_version"
 }
+apply plugin: 'com.loopnow.camera'
