@@ -27,11 +27,11 @@
         {
           "name": "initializer-1.0.0.jar",
           "url": "initializer-1.0.0.jar",
-          "size": 3545,
-          "sha512": "9e6fc6ee92d37155d6df1035396d06695d03bdd93c456522afdd5aab9d53e4afc3bd69f1e469c789de22fd70e655d02881578befe32a400ba8e923ae9c9ec01f",
-          "sha256": "8d6e93708b8a47d265a02b0585f3eee7164e2f8ceba4ac2f7c8a6b47bb7e312f",
-          "sha1": "b910f92e18fec67b4cc889770e423c2efb9a0fbe",
-          "md5": "6af9feda4f511aadb58fed99efa4fca5"
+          "size": 3516,
+          "sha512": "ab18059da2902353927b32999e93b77777a365772d8e6d87344de4fdd1e978128db92b27ac5a686a9833b92dd88fdd4c9ee55fe7e93fd8e141e2110a650b201b",
+          "sha256": "ccdbaade57e49d3162dfc2435c19d742b3b38f19aef47e9f708cf2bf9feaa39c",
+          "sha1": "75dbf757c490933582c5cdfae90b62e17555d6f9",
+          "md5": "ec87d105a5284227d41f6f7220c9a872"
         }
       ]
     },
@@ -64,11 +64,11 @@
         {
           "name": "initializer-1.0.0.jar",
           "url": "initializer-1.0.0.jar",
-          "size": 3545,
-          "sha512": "9e6fc6ee92d37155d6df1035396d06695d03bdd93c456522afdd5aab9d53e4afc3bd69f1e469c789de22fd70e655d02881578befe32a400ba8e923ae9c9ec01f",
-          "sha256": "8d6e93708b8a47d265a02b0585f3eee7164e2f8ceba4ac2f7c8a6b47bb7e312f",
-          "sha1": "b910f92e18fec67b4cc889770e423c2efb9a0fbe",
-          "md5": "6af9feda4f511aadb58fed99efa4fca5"
+          "size": 3516,
+          "sha512": "ab18059da2902353927b32999e93b77777a365772d8e6d87344de4fdd1e978128db92b27ac5a686a9833b92dd88fdd4c9ee55fe7e93fd8e141e2110a650b201b",
+          "sha256": "ccdbaade57e49d3162dfc2435c19d742b3b38f19aef47e9f708cf2bf9feaa39c",
+          "sha1": "75dbf757c490933582c5cdfae90b62e17555d6f9",
+          "md5": "ec87d105a5284227d41f6f7220c9a872"
         }
       ]
     }

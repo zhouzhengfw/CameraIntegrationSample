@@ -46,4 +46,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "SdkDemo"
 include ':app'
-//include ':fw-initializer'
+include ':fw-initializer'
